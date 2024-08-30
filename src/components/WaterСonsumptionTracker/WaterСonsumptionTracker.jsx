@@ -2,55 +2,51 @@ import css from "./WaterСonsumptionTracker.css";
 
 export default function WaterСonsumptionTracker() {
   return (
-    <div className={css.container}>
-      <div>
-          <h1>Water consumption tracker</h1>
-          <h2>Record daily water intake and track</h2>
-          <h3>Tracker Benefits</h3>
-          <ul>
-            <li>
-              <div>
+    <div >
+      <div className={css.record}>
+        <h1 className={css.title}>Water consumption tracker</h1>
+        <h2 className={css.title}>Record daily water intake and track</h2>
+        <div className={css.card}>
+          <h3 className={css.cardTitle}>Tracker Benefits</h3>
+          <ul className={css.cardRecordList}>
+            <li className={css.cardRecordItem}>
                 <svg
-                  //class="benefits-first-svg-icon"
+                className={css.cardRecordItemIcon}
                   width="32"
                   height="32"
                   aria-label="calendar icon"
                 >
-                  <use href="./images/symbol-defs.svg#icon-calendar"></use>
+                  <use href="./images/icons/icons.svg#icon-calendar"></use>
                 </svg>
-              </div>
-              <p>Habit drive</p>
-            </li>
-            <li>
-              <div>
+              <p className={css.cardRecordItemText}>Habit drive</p>
+              </li>
+              <li className={css.cardRecordItem}>
                 <svg
-                  //class="benefits-first-svg-icon"
+                  className={css.cardRecordItemIcon}
                   width="32"
                   height="32"
                   aria-label="checkmark icon"
                 >
                   <use
-                    href="./images/symbol-defs.svg#icon-presentation-chart-bar"
+                    href="./images/icons/icons.svg#icon-presentation-chart-bar"
                   ></use>
                 </svg>
-              </div>
-              <p>View statistics</p>
-            </li>
-            <li>
-              <div >
+                <p className={css.cardRecordItemText}>View statistics</p>
+              </li>
+              <li className={css.cardRecordItem}>
                 <svg
-                  //class="benefits-first-svg-icon"
+                  className={css.cardRecordItemIcon}
                   width="32"
                   height="32"
                   aria-label="diagram icon"
                 >
-                  <use href="./images/symbol-defs.svg#icon-tools"></use>
+                  <use href="./images/icons/icons.svg#icon-tools"></use>
                 </svg>
-              </div>
-              <p >Personal rate setting</p>
-            </li>
-          </ul>
-          <button  type="button">Try tracker</button>
+                <p className={css.cardRecordItemText}>Personal rate setting</p>
+              </li>
+            </ul>
+          </div>
+        <button className={css.button} type="button">Try tracker</button>
         </div>
     </div>
   );

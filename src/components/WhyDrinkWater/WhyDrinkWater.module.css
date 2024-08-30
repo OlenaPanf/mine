@@ -1,0 +1,156 @@
+/* ============== COMMON STYLES ============== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #2f2f2f;
+  background: #fff;
+}
+
+/* button {
+  cursor: pointer;
+} */
+.container {
+  margin-top: 24px;
+  /* padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px; */
+  background-image: url('../images/background/mobile/icon-light-background-main-page.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /* width: 100%;
+  height: 100vh; Например, чтобы фон занимал весь экран */
+}
+
+.why {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.card-why {
+  display: inline-block; /* Додайте цю властивість */
+  padding: 24px 16px;
+  border-radius: 10px;
+  background: #ecf2ff;
+  box-shadow: 0px 4px 14px 0px rgba(64, 123, 255, 0.3);
+  max-width: 100%;
+}
+
+.card-why-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.card-why-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.card-item-svg {
+  width: 8px;
+  height: 8px;
+  fill: #407bff;
+  flex-shrink: 0;
+}
+
+.card-why-item-text {
+  font-size: 16px;
+  line-height: 1.25; /* 125% */
+  width: auto; /* Змініть з 232px на auto */
+  max-width: 100%; /* Додайте це, щоб текст не виходив за межі */
+  overflow-wrap: break-word; /* Додайте для автоматичного переносу слів */
+  white-space: normal; /* Додайте, якщо хочете, щоб текст міг переноситися */
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 767px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    background-image: url('../images/background/tablet/icon-light-background-main-page.svg');
+  }
+
+  .why {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 50px;
+  }
+  .card-why {
+    padding: 32px 24px;
+  }
+
+  .card-why-item-text {
+    width: 430px;
+    flex-shrink: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    display: flex; /* Додаємо Flexbox */
+    justify-content: center; /* Центруємо елементи по горизонталі */
+    align-items: center;
+    gap: 81px; /* Додаємо відстань між елементами */
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 80px;
+    padding-bottom: 294px;
+    background-image: url('../images/background/desktop/icon-light-background-main-page.svg'),
+      url('../images/background/desktop/icon-light-background-elem-main-page.svg');
+  }
+
+  .why {
+    padding-bottom: 0;
+    display: flex; /* Використовуємо Flexbox для .why */
+    flex-direction: column; /* Розміщуємо дочірні елементи в колонку */
+    justify-content: flex-end; /* Вирівнюємо дочірні елементи по нижньому краю */
+  }
+
+  .card-why {
+    width: auto; /* Або вкажіть фіксовану ширину, якщо потрібно */
+  }
+}
