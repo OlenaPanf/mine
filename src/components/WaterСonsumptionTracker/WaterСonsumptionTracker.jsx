@@ -1,10 +1,10 @@
-import css from "./WaterСonsumptionTracker.css";
+import css from "./WaterСonsumptionTracker.module.css";
 
 export default function WaterСonsumptionTracker() {
   return (
     <div >
       <div className={css.record}>
-        <h1 className={css.title}>Water consumption tracker</h1>
+        <h1 className={css.mainTitle}>Water consumption tracker</h1>
         <h2 className={css.title}>Record daily water intake and track</h2>
         <div className={css.card}>
           <h3 className={css.cardTitle}>Tracker Benefits</h3>
@@ -16,7 +16,7 @@ export default function WaterСonsumptionTracker() {
                   height="32"
                   aria-label="calendar icon"
                 >
-                  <use href="./images/icons/icons.svg#icon-calendar"></use>
+                  <use href="../../images/icons/icons.svg#icon-calendar"></use>
                 </svg>
               <p className={css.cardRecordItemText}>Habit drive</p>
               </li>
@@ -28,7 +28,7 @@ export default function WaterСonsumptionTracker() {
                   aria-label="checkmark icon"
                 >
                   <use
-                    href="./images/icons/icons.svg#icon-presentation-chart-bar"
+                    href="../../images/icons/icons.svg#icon-presentation-chart-bar"
                   ></use>
                 </svg>
                 <p className={css.cardRecordItemText}>View statistics</p>
@@ -40,7 +40,7 @@ export default function WaterСonsumptionTracker() {
                   height="32"
                   aria-label="diagram icon"
                 >
-                  <use href="./images/icons/icons.svg#icon-tools"></use>
+                  <use href="../../images/icons/icons.svg#icon-tools"></use>
                 </svg>
                 <p className={css.cardRecordItemText}>Personal rate setting</p>
               </li>

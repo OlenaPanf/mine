@@ -1,6 +1,6 @@
 import WaterСonsumptionTracker from '../WaterСonsumptionTracker/WaterСonsumptionTracker';
 import WhyDrinkWater from '../WhyDrinkWater/WhyDrinkWater';
-import css from "./Main.css";
+import css from "./Main.module.css";
 
 
 export default function Main() {
@@ -11,3 +11,4 @@ export default function Main() {
     </div>
   );
 }
+

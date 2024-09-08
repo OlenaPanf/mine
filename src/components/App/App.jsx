@@ -1,15 +1,20 @@
 //import { useState } from 'react'
-import Main from '../Main/Main';
+//import ColorSchemeToggle from '../ColorSchemeToggle/ColorSchemeToggle';
+//import Main from '../Main/Main';
+import ForgotPasswordPage from '../../pages/ForgotPasswordPage/ForgotPasswordPage';
+// import { Toaster } from 'react-hot-toast';
 import './App.css'
+
 
 
 export default function App() {
   return (
     <div>
-
-      <Main />
-      {/* <Product />
-      <Product /> */}
+      <ForgotPasswordPage />
+      {/* <Toaster /> */}
+      {/* <ColorSchemeToggle /> */}
+      {/* <Main /> */}
+      
     </div>
   );
 }
